@@ -93,13 +93,13 @@ body {
     display: none;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 20px;
+    padding: 10px 20px;
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 16px;
     box-shadow: var(--shadow-subtle);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     flex-wrap: wrap;
     gap: 10px;
     border: 0.5px solid var(--ios-separator);
@@ -213,12 +213,12 @@ body[data-mode='exam'][data-exam-state='result'] #examHeader {
 .progress-info {
     display: flex;
     justify-content: space-between;
-    padding: 12px 20px;
+    padding: 8px 20px;
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     font-size: 0.9rem;
     color: var(--text-secondary);
     border: 0.5px solid var(--ios-separator);
@@ -253,7 +253,7 @@ input[type='number']:focus {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 16px;
-    padding: 16px;
+    padding: 14px;
     box-shadow: var(--shadow-subtle);
     margin-bottom: 16px;
     border: 0.5px solid var(--ios-separator);
@@ -263,14 +263,14 @@ input[type='number']:focus {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .question-number {
     font-size: 0.8rem;
     color: var(--text-secondary);
     background: rgba(118, 118, 128, 0.12);
-    padding: 5px 12px;
+    padding: 4px 10px;
     border-radius: 10px;
     font-weight: 500;
 }
@@ -305,8 +305,8 @@ input[type='number']:focus {
 
 .question-text {
     font-size: 1.05rem;
-    line-height: 1.45;
-    margin-bottom: 11px;
+    line-height: 1.35;
+    margin-bottom: 8px;
     font-weight: 500;
 }
 
@@ -314,11 +314,11 @@ input[type='number']:focus {
 .options-list {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 5px;
 }
 
 .option-item {
-    padding: 9px 14px;
+    padding: 7px 14px;
     border: 1px solid var(--ios-separator);
     border-radius: 12px;
     cursor: pointer;
@@ -1079,7 +1079,7 @@ input[type='number']:focus {
     }
 
     .question-card {
-        padding: 15px;
+        padding: 12px;
     }
 
     .question-text {
@@ -1248,14 +1248,14 @@ input[type='number']:focus {
                     </div>
                     <div class="question-text" id="questionText">加载中...</div>
                     <div class="options-list" id="optionsList"></div>
-                    <div class="analysis" id="analysis">
-                        <div class="analysis-title">📖 答案解析</div>
-                        <div id="analysisText"></div>
-                    </div>
                     <div class="button-group" id="buttonGroup">
                         <button class="btn btn-secondary" id="prevBtn" disabled>← 上一题</button>
                         <button class="btn btn-primary" id="submitBtn">提交答案</button>
                         <button class="btn btn-secondary" id="nextBtn">下一题 →</button>
+                    </div>
+                    <div class="analysis" id="analysis">
+                        <div class="analysis-title">📖 答案解析</div>
+                        <div id="analysisText"></div>
                     </div>
                 </div>
             </div>
